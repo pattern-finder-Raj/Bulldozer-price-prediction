@@ -65,6 +65,29 @@ How well can we predict the future sale price of a bulldozer, given its characte
 
 ## 📁 Project Structure
 
+Bulldozer-price-prediction/
+│
+├── data/                  # (local only, not uploaded to GitHub)
+│   └── raw/               # raw Kaggle data
+│   └── processed/         # cleaned / engineered features
+│
+├── notebooks/             # Jupyter Notebooks
+│   └── Bulldozer_price_prediction.ipynb
+│
+├── src/                   # Python scripts (reusable functions)
+│   └── data_preprocessing.py
+│   └── train_models.py
+│   └── evaluate.py
+│
+├── models/                # saved trained models (.pkl/.joblib)
+│
+├── plots/                 # saved plots and graphs
+│
+├── requirements.txt       # dependencies
+├── README.md              # project documentation
+├── LICENSE                # license file
+└── .gitignore             # ignore unnecessary files
+
 ## 📝 Key Insights
 - XGBoost performed best with the lowest RMSLE of 0.2073
 - Feature engineering, especially date-related features, significantly improved model performance
